@@ -5,5 +5,5 @@
 @extends('layouts.app')
 
 @section('content')
-<livewire:post-list />
+<livewire:product-list />
 @endsection
