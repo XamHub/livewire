@@ -2,12 +2,12 @@
     <input
       wire:model.live="query"
       type="text"
-      placeholder="Search posts..."
+      placeholder="Zoek berichten..."
     >
   
     @if ($query)
       @if ($posts)
-        <p>Found {{ $posts->count() }} result(s) for "{{ $query }}"</p>
+        <p>Er zijn {{ $posts->count() }} resultaten gevonden voor "{{ $query }}"</p>
   
         <ul>
           @foreach ($posts as $post)
@@ -19,9 +19,9 @@
           @endforeach
         </ul>
       @else
-        <p>No results found for "{{ $query }}"</p>
+        <p>Geen resultaten gevonden voor "{{ $query }}"</p>
       @endif
     @else
-      <p>Start typing to search...</p>
+      <p>Begin met typen om te zoeken...</p>
     @endif
   </div>

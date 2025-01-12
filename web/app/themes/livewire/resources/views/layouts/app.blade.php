@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @php(do_action('get_header'))
     @php(wp_head())
+
+    {{-- Alpine JS --}}
+    <script src="//unpkg.com/alpinejs" defer></script>
   </head>
 
   <body @php(body_class())>
